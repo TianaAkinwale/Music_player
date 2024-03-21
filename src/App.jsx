@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-import EventsWorld from '../EventsWorld'
-import SignUp from '../SignUp'
+import EventsWorld from './components/EventsWorld'
+import SignUp from './components/SignUp'
 const App = () => {
 	return (
 	<Routes>

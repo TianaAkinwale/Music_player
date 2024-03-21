@@ -1,6 +1,6 @@
-import REeact, { useState } from 'react'
+import React, { useState } from 'react'
 
-const Test = () => {
+const EventsWorld = () => {
     const [value, setValue] = useState({
     firstName: '',
     message: '',
@@ -97,4 +97,4 @@ const Test = () => {
     )
   }
 
-export default Test
+export default EventsWorld
