@@ -1,8 +1,7 @@
 //Sign up component
 import React, { useState } from 'react'
 
-const SignUp = ({ signUpElements }) => {
-  const { subscribe, signUp, signupbtn } = signUpElements
+const SignUp = () => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -41,8 +40,7 @@ const SignUp = ({ signUpElements }) => {
 
   return (
     <div className='bg-blue-400 text-center m-[26px] px-[20px] py-[20px] rounded-[12px] shadow-md'>
-      <h1 className=" ">{subscribe}</h1>
-      <p className=" ">{signUp}</p>
+      <p className=" ">Yo! Sign Up</p>
       <form onSubmit={handleSubmit}>
         <input className='rounded-[8px] px-[9px] py-[4px] m-[3px] mt-[30px] w-[180px]'
           type="text" id="fName" onChange={fNameHandler} placeholder="First Name" /* required *//>
@@ -50,7 +48,7 @@ const SignUp = ({ signUpElements }) => {
           type="text" id="lName" onChange={lNameHandler} placeholder="Last Name"/>
         <input className='rounded-[8px] px-[9px] py-[4px] m-[3px] mt-[30px] w-[180px]'
           type="email" id="mail" onChange={mailHandler} placeholder="Email" /* required *//><br/>
-        <button className='bg-red-700 rounded-[13px] py-[8px] px-[85px] m-[16px] text-white cursor-pointer'>{signupbtn}</button>
+        <button className='bg-red-700 rounded-[13px] py-[8px] px-[85px] m-[16px] text-white cursor-pointer'>Sign Up</button>
       </form> 
     </div>
   )
